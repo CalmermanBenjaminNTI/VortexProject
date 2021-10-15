@@ -12,10 +12,13 @@ header {
 
 ul {
   font-family: "Syncopate", sans-serif;
+  color: #fff;
+  font-size: 32px;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 4px;
 }
 
 li {
@@ -23,5 +26,17 @@ li {
   font-family: syncopate;
   padding-left: 4px;
   padding-right: 4px;
-  font-size: 40px;
+}
+
+.body{
+  background-image: url(backgroundGalaxy.jpg);
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  background-color:#44444444;
+  width: 60%;
+  color: #aaa;
 }
