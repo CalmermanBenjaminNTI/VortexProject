@@ -8,9 +8,8 @@
 
 header {
   background-color: #600080;
-}
-
-ul {
+  position: sticky;
+  top: 0px;
   font-family: "Syncopate", sans-serif;
   color: #fff;
   font-size: 32px;
@@ -21,7 +20,12 @@ ul {
   padding: 4px;
 }
 
-li {
+button.header{
+  height: 100%;
+  
+}
+
+div.header {
   width: auto;
   font-family: syncopate;
   padding-left: 4px;
@@ -31,12 +35,12 @@ li {
 .body{
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template: 1fr / 1fr 60% 1fr;
 }
 
 p{
+  grid-column: 2/3;
   background-color:#44444444;
-  width: 60%;
   color: #aaa;
 }
