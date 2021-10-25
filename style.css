@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-width: 0px;
 }
 
 header {
@@ -17,30 +18,54 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+button.headerMenu {
+  height: 100%;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 90%;
+  border-left: solid 1px #fff;
+  background-color: #400050;
+  color: #fff;
+  font-family: "Syncopate", sans-serif;
+}
+
+div.headerMenu {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+div.headerTitle {
+  width: auto;
   padding: 4px;
 }
 
-button.header{
-  height: 100%;
-  
-}
-
-div.header {
-  width: auto;
-  font-family: syncopate;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.body{
+.contentColumn {
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
   display: grid;
   grid-template: 1fr / 1fr 60% 1fr;
 }
 
-p{
+p {
   grid-column: 2/3;
-  background-color:#44444444;
+  background-color: #44444444;
   color: #aaa;
+}
+
+div.sideNavigation {
+  display: flex;
+  flex-direction: column;
+}
+
+button.sideNavigation {
+  height: 12vh;
+  width: 12vh;
+  color: #fff;
+  background: url(menuLogo.png) transparent;
+  background-size: contain;
 }
