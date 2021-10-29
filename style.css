@@ -62,10 +62,17 @@ div.sideNavigation {
   flex-direction: column;
 }
 
-button.sideNavigation {
+a.sideNavigation {
   height: 12vh;
   width: 12vh;
   color: #fff;
+  display: block;
   background: url(menuLogo.png) transparent;
   background-size: contain;
+  text-align: center;
+  font-size: 60%;
+  line-height: 12vh;
+  text-decoration: none;
+  font-family: "Syncopate";
 }
+
