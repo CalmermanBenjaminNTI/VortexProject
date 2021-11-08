@@ -44,16 +44,44 @@ div.headerTitle {
   padding: 4px;
 }
 
-.contentColumn {
+.contentArea {
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
   display: grid;
   grid-template: 1fr / 1fr 60% 1fr;
 }
 
-p {
+div.contentColumn {
   grid-column: 2/3;
-  background-color: #44444444;
+  background-color: #44444488;
+}
+
+div.mainContentFlex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+div.mainContentText{
+  background-color: #600080;
+  width: 6cm;
+  height: 6cm;
+  margin: 8px;
+  border: inset 5 5 #fff;
+  border-radius: 5px;
+}
+div.mainContentImage{
+  background-color: #400050;
+  width: 6cm;
+  height:6cm;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+h1 {  
+  color: #aaa;
+}
+p {
   color: #aaa;
 }
 
