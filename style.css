@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   border-width: 0px;
+  text-decoration: none;
 }
 
 header {
@@ -18,67 +19,85 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow:#000 0px 8px 16px,
+  inset #000 0px -2px 4px,
+  inset #000 0px 2px 4px;
 }
 
-button.headerMenu {
+a.headerMenu {
   height: 100%;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 90%;
-  border-left: solid 1px #fff;
+  /*border-left: solid 1px #fff;*/
   background-color: #400050;
   color: #fff;
   font-family: "Syncopate", sans-serif;
+  box-shadow: inset #000 4px 0px 12px,
+  inset #000 -4px 0px 12px;
+}
+
+a.headerMenu:hover {
+  box-shadow: #000 4px 0px 12px,
+  #000 -4px 0px 12px;
 }
 
 div.headerMenu {
-  width: 40%;
+  width: max-content;
   display: flex;
   flex-direction: row;
   justify-content: right;
 }
 
-div.headerTitle {
+a.headerTitle {
   width: auto;
   padding: 4px;
+  color: inherit;
 }
 
 .contentArea {
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
   display: grid;
-  grid-template: 1fr / 1fr 60% 1fr;
+  grid-template: 1fr / 1fr 30% 30% 1fr;
 }
 
 div.contentColumn {
-  grid-column: 2/3;
+  grid-column: 2/4;
   background-color: #44444488;
 }
 
-div.mainContentFlex{
+div.mainContentFlexLeft {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column;
+  grid-column: 2/3;
+  padding-right: 4px;
+}
+div.mainContentFlexRight {
+  display: flex;
+  flex-flow: column;
+  grid-column: 3/4;
+  padding-left: 4px;
 }
 
-div.mainContentText{
+div.mainContentText {
   background-color: #600080;
-  width: 6cm;
-  height: 6cm;
+  width: 100%;
+  height: auto;
   margin: 8px;
   border: inset 5 5 #fff;
   border-radius: 5px;
 }
-div.mainContentImage{
+.mainContentImage {
   background-color: #400050;
-  width: 6cm;
-  height:6cm;
+  width: 100%;
+  height: auto;
   margin: 8px;
   border-radius: 5px;
 }
 
-h1 {  
+h1 {
   color: #aaa;
 }
 p {
@@ -88,6 +107,10 @@ p {
 div.sideNavigation {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 44px;
+  width: max-content;
+  height: max-content;
 }
 
 a.sideNavigation {
@@ -95,12 +118,16 @@ a.sideNavigation {
   width: 12vh;
   color: #fff;
   display: block;
-  background: url(menuLogo.png) transparent;
+  background: url(menuLogo2.png) transparent;
   background-size: contain;
   text-align: center;
   font-size: 60%;
   line-height: 12vh;
   text-decoration: none;
   font-family: "Syncopate";
+  box-shadow: #000 inset 6px 6px 16px,
+  #000 inset -6px -6px 16px;
 }
-
+a.sideNavigation:hover{
+  box-shadow: none;
+}
