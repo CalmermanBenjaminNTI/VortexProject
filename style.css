@@ -29,6 +29,7 @@ a.headerMenu {
   display: block;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 6px;
   font-size: 90%;
   /*border-left: solid 1px #fff;*/
   background-color: #400050;
@@ -41,6 +42,7 @@ a.headerMenu {
 a.headerMenu:hover {
   box-shadow: #000 4px 0px 12px,
   #000 -4px 0px 12px;
+  border-radius: 16px;
 }
 
 div.headerMenu {
@@ -130,4 +132,54 @@ a.sideNavigation {
 }
 a.sideNavigation:hover{
   box-shadow: none;
+}
+
+div.voteGrid{
+  grid-column: 2/4;
+  display: grid;
+  height: 95vh;
+  grid-template-columns: 40% 1fr 40%;
+  grid-template-rows: 1fr 1fr 10vh 20vh 1fr;
+}
+
+div.thumbsUp{
+  grid-row: 3/4;
+  grid-column: 0/1;
+  display: flex;
+  justify-content: right;
+}
+img.thumbsUp{
+  width: 10vh;
+  height: 10vh;
+}
+img.thumbsUp:hover{
+  box-shadow: #fff 0px 0px 16px;
+}
+
+img.thumbsDown{
+  height: 10vh;
+  width: 10vh;
+}
+img.thumbsDown:hover{
+  transform: rotate(180deg);
+  box-shadow: #fff 0px 0px 16px;
+}
+
+div.thumbsDown{
+  grid-row: 3/4;
+  grid-column: 3/4;
+  display: flex;
+  align-items: flex-end;
+  width: 10vh;
+}
+
+div.thumbsDown:hover{
+  grid-row:3/5;
+}
+
+h1{
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
+  font-family: "Syncopate", sans-serif;
 }
