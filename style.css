@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 * {
   margin: 0;
@@ -62,6 +63,7 @@ a.headerTitle {
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
   display: grid;
+  width: 100VW;
   grid-template: 1fr / 1fr 30% 30% 1fr;
 }
 
@@ -89,7 +91,11 @@ div.mainContentText {
   height: auto;
   margin: 8px;
   border: inset 5 5 #fff;
+  font-family: 'inconsolata', monospace;
+  color: #ccc;
   border-radius: 5px;
+  font-size: 32px;
+  padding: 4px;
 }
 .mainContentImage {
   background-color: #400050;
@@ -182,4 +188,11 @@ h1{
   grid-row: 2/3;
   text-align: center;
   font-family: "Syncopate", sans-serif;
+}
+
+@media (max-width: 600px)
+{
+  .thing {
+    grid-template-columns: 1fr;
+  }
 }
