@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 * {
   margin: 0;
@@ -20,9 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow:#000 0px 8px 16px,
-  inset #000 0px -2px 4px,
-  inset #000 0px 2px 4px;
+  box-shadow: #000 0px 8px 16px, inset #000 0px -2px 4px, inset #000 0px 2px 4px;
 }
 
 a.headerMenu {
@@ -36,13 +34,11 @@ a.headerMenu {
   background-color: #400050;
   color: #fff;
   font-family: "Syncopate", sans-serif;
-  box-shadow: inset #000 4px 0px 12px,
-  inset #000 -4px 0px 12px;
+  box-shadow: inset #000 4px 0px 12px, inset #000 -4px 0px 12px;
 }
 
 a.headerMenu:hover {
-  box-shadow: #000 4px 0px 12px,
-  #000 -4px 0px 12px;
+  box-shadow: #000 4px 0px 12px, #000 -4px 0px 12px;
   border-radius: 16px;
 }
 
@@ -63,13 +59,32 @@ a.headerTitle {
   background-image: url(backgroundGalaxy.jpg);
   height: 90%;
   display: grid;
-  width: 100VW;
+  width: 100vw;
   grid-template: 1fr / 1fr 30% 30% 1fr;
 }
 
 div.contentColumn {
   grid-column: 2/4;
   background-color: #44444488;
+  padding: 4px;
+}
+div.contentColumnCommands {
+  grid-column: 2/4;
+  padding: 4px;
+}
+div.perspective{
+  background-color: #44444488;
+}
+
+
+p + p {
+  margin-top: 1em;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 70ch;
 }
 
 div.mainContentFlexLeft {
@@ -91,7 +106,7 @@ div.mainContentText {
   height: auto;
   margin: 8px;
   border: inset 5 5 #fff;
-  font-family: 'inconsolata', monospace;
+  font-family: "inconsolata", monospace;
   color: #ccc;
   border-radius: 5px;
   font-size: 32px;
@@ -133,14 +148,13 @@ a.sideNavigation {
   line-height: 12vh;
   text-decoration: none;
   font-family: "Syncopate";
-  box-shadow: #000 inset 6px 6px 16px,
-  #000 inset -6px -6px 16px;
+  box-shadow: #000 inset 6px 6px 16px, #000 inset -6px -6px 16px;
 }
-a.sideNavigation:hover{
+a.sideNavigation:hover {
   box-shadow: none;
 }
 
-div.voteGrid{
+div.voteGrid {
   grid-column: 2/4;
   display: grid;
   height: 95vh;
@@ -148,30 +162,30 @@ div.voteGrid{
   grid-template-rows: 1fr 1fr 10vh 20vh 1fr;
 }
 
-div.thumbsUp{
+div.thumbsUp {
   grid-row: 3/4;
   grid-column: 0/1;
   display: flex;
   justify-content: right;
 }
-img.thumbsUp{
+img.thumbsUp {
   width: 10vh;
   height: 10vh;
 }
-img.thumbsUp:hover{
+img.thumbsUp:hover {
   box-shadow: #fff 0px 0px 16px;
 }
 
-img.thumbsDown{
+img.thumbsDown {
   height: 10vh;
   width: 10vh;
 }
-img.thumbsDown:hover{
+img.thumbsDown:hover {
   transform: rotate(180deg);
   box-shadow: #fff 0px 0px 16px;
 }
 
-div.thumbsDown{
+div.thumbsDown {
   grid-row: 3/4;
   grid-column: 3/4;
   display: flex;
@@ -179,19 +193,18 @@ div.thumbsDown{
   width: 10vh;
 }
 
-div.thumbsDown:hover{
-  grid-row:3/5;
+div.thumbsDown:hover {
+  grid-row: 3/5;
 }
 
-h1{
+h1 {
   grid-column: 1/4;
   grid-row: 2/3;
   text-align: center;
   font-family: "Syncopate", sans-serif;
 }
 
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
   .thing {
     grid-template-columns: 1fr;
   }
