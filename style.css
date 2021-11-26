@@ -68,10 +68,12 @@ div.contentColumn {
   background-color: #44444488;
   padding: 4px;
 }
+
 div.contentColumnCommands {
   grid-column: 2/4;
   padding: 4px;
 }
+
 div.perspective{
   background-color: #44444488;
 }
